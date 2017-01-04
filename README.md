@@ -42,7 +42,7 @@
   M R x C { A1 A2 ... An }    Saves a matrix M with dimensions R x C with n = R x C entries to input.
   rename M1 M2                Renames matrix M1 to M2.
   remove M                    Removes matrix M.
-  dump                        Prints saved matrices.
+  display                     Prints saved matrices.
   reset                       Resets saved matrices.
   M ?                         Displays matrix M.
   M1 + M2 ( -> M3 )           Adds matrices M1 and M2. Save to matrix M3 if desired.
@@ -205,7 +205,7 @@ R1 -> R1 - R2 * 2
 ```
 >>> load input.inp
 
->>> dump
+>>> display
 a:
 |       1       2       3       4       |
 |       5       6       7       8       |

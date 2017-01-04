@@ -1,0 +1,40 @@
+Matrix Calculator
+
+Examples:
+
+mat:
+|       1       2       3       4       |       Representation of saved 4 x 4 matrix mat.
+|       5       6       7       8       |       Command used:
+|       9       10      11      12      |       mat 4 x 4 { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 }
+|       13      14      15      16      |
+
+To add matrix M1 to M2:                         M1 + M2
+Same as above but save to M3:                   M1 + M2 -> M3
+
+**Anything in parentheses indicates optional command arguments**
+
+Commands:
+  M R x C { A1 A2 ... An }    Saves a matrix M with dimensions R x C with n = R x C entries to input.
+  rename M1 M2                Renames matrix M1 to M2.
+  remove M                    Removes matrix M.
+  display                     Prints saved matrices.
+  reset                       Resets saved matrices.
+  M ?                         Displays matrix M.
+  M1 + M2 ( -> M3 )           Adds matrices M1 and M2. Save to matrix M3 if desired.
+  M1 - M2 ( -> M3 )           Subtracts matrices M1 and M2.
+  M1 * M2 ( -> M3 )           Multiply matrix M1 by a matrix or by a constant C.
+  C * M1 ( -> M2 )            ...
+  M1 * C ( -> M2 )            ...
+  M1 ^ T ( -> M2 )            Transpose matrix M1.
+  inverse M1 ( -> M2 )        Compute inverse of matrix M1.
+  det M1                      Compute determinant of matrix M1.
+  rref M1 ( -> M2 )           Compute reduced row echelon form of M1 with all steps displayed.
+  cofactor M1 ( -> M2 )       Compute cofactor expansion matrix of M1.
+  V1 dot V2                   Compute dot product of vectors V1 and V2.
+  V1 x V2 ( -> V3 )           Compute cross product of vectors V1 and V2.
+  M N identity                Saves N x N identity matrix M.
+  M R x C zero                Saves R x C matrix of zeroes M.
+  load F                      Loads commands from file F.
+  quit                        Exits Calculator.
+  help                        Prints this file.
+
